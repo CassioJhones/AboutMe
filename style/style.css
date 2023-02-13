@@ -103,7 +103,7 @@ body {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
-.apresentacao__links_link:hover{
+.apresentacao__links_navegacao:hover{
     background-color: var(--hover);
     color: var(--primaria);
     font-weight: bold;
