@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <!-- <link rel="stylesheet" href="reset.css"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nice to meet you</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-
+    <link rel="stylesheet" href="./style/style.css">
+    
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="titulo"> Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end
-                    de
-                    qualidade!</strong></h1>
+            <h1 class="titulo"> Seja bem-vindo ao meu <strong class="titulo-destaque">Portfolio</strong></h1>
+
             <p class="texto">Olá! Me chamo Cassio Jhones, desenvolvedor Front-end aprimorando minhas habilidades com
-                Javascript.
-                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+                Javascript e outras stacks! 
+             Como posso te ajudar?</p>
+
             <div class="apresentacao__links">
-                <a class="apresentacao__links_link" href="https://www.linkedin.com/in/cassio-bjhones/">LinkedIn</a>
-                <a class="apresentacao__links_link" href="https://github.com/CassioJhones">GitHub</a>
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+
+                <a class="apresentacao__links_link" href="https://github.com/CassioJhones" title="Navegar para o perfil do GitHub" target="_blank">
+                    <img class="git" src="./assets/logotipo-do-github.png" alt="">
+                    GitHub
+                </a>
+
+                <a class="apresentacao__links_link" href="https://www.linkedin.com/in/cassio-bjhones/" title="Navegar para o perfil do Linkedin" target="_blank">
+                    <img class="git" src="./assets/linkedin-logo.png" alt="">
+                    Linkedin
+                </a>
+
+                <a class="apresentacao__links_link" href="https://www.instagram.com/sr.jhones_/" title="Navegar para o perfil do instagram" target="_blank">
+                    <img class="git" src="./assets/instagram.png" alt="">
+                    Instagram
+                </a>
+
             </div>
         </section>
-        <img src="bustoCassio.jpg" alt="Autor da Pagina">
-
-
+        <img src="./assets/bustoCassio.jpg" alt="Autor da Pagina">
     </main>
-    <footer></footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por Cássio Jhones</p>
+    </footer>
 </body>
-
 </html>
