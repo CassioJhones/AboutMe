@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+:root{
+    --primaria:#181823;
+    --secundaria:#E9F8F9;
+    --terciaria:#537FE7;
+    --hover:#85a8fc;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montsserat', sans-serif;
+}
+
+
+
+
+* {/* geral */
+    padding: 0;
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--primaria) ;
+    color: var(--secundaria);
+}
+
+/* ***** CABEÇALHO ***** */
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link:hover{
+    color: var(--hover);
+   
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--terciaria);
+    text-decoration: none;
+}
+/* ***** CABEÇALHO ***** */
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+.titulo-destaque {
+    color: var(--terciaria);
+}
+.texto {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    
+}
+
+img {
+    width: 35%;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+.apresentacao__links_link { /* ----BOTOES-- */
+   
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    color: var(--secundaria);
+    border: 3PX outset var(--terciaria);
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+.apresentacao__links_link:hover{
+    background-color: var(--hover);
+    color: var(--primaria);
+    font-weight: bold;
+    border-radius: 200px;
+    transition: 400ms;
+    width: 17em;
+   
+}
+
+.git{
+    width: 30px;
+}
+
+.rodape{
+    color: var(--primaria);
+    background-color: var(--terciaria);
+    padding: 24px;
+    text-align: center;
+    font-size:24px ;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--terciaria);
+}
