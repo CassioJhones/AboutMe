@@ -1,18 +1,14 @@
+/* ----GERAL----GERAL----GERAL----GERAL----GERAL---- */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 :root{
     --primaria:#181823;
     --secundaria:#E9F8F9;
     --terciaria:#537FE7;
     --hover:#85a8fc;
-
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montsserat', sans-serif;
 }
-
-
-
-
-* {/* geral */
+* {
     padding: 0;
     margin: 0;
 }
@@ -21,8 +17,12 @@ body {
     background-color: var(--primaria) ;
     color: var(--secundaria);
 }
+/* ----GERAL----GERAL----GERAL----GERAL----GERAL---- */
 
-/* ***** CABEÇALHO ***** */
+
+
+
+/* *****CABEÇALHO*****CABEÇALHO*****CABEÇALHO***** */
 .cabecalho{
     padding: 2% 0 0 15%;
 }
@@ -32,7 +32,6 @@ body {
 }
 .cabecalho__menu__link:hover{
     color: var(--hover);
-   
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
@@ -41,8 +40,13 @@ body {
     color: var(--terciaria);
     text-decoration: none;
 }
-/* ***** CABEÇALHO ***** */
+/* *****CABEÇALHO*****CABEÇALHO*****CABEÇALHO***** */
 
+
+
+
+
+/* ----APRESENTAÇÃO----APRESENTAÇÃO----APRESENTAÇÃO---- */
 .apresentacao {
     padding: 5% 15%;
     display: flex;
@@ -57,10 +61,16 @@ body {
     flex-direction: column;
     gap: 30px;
 }
-
 .apresentacao__imagem{
     width: 50%;
+    border-radius: 90px;
 }
+.stack{
+    width: 20%;
+  display: block;
+    justify-content: baseline;
+}
+    
 
 .titulo {
     font-size: 2.25rem;
@@ -72,10 +82,7 @@ body {
 .texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-    
 }
-
-
 .apresentacao__links {
     display: flex;
     flex-direction: column;
@@ -89,7 +96,6 @@ body {
     font-size: 1.5rem;
 }
 .apresentacao__links_navegacao { /* ----BOTOES-- */
-   
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -110,12 +116,14 @@ body {
     border-radius: 200px;
     transition: 400ms;
     width: 17em;
-   
 }
-
 .git{
     width: 30px;
 }
+/* ----APRESENTAÇÃO----APRESENTAÇÃO----APRESENTAÇÃO---- */
+
+
+
 
 .rodape{
     color: var(--primaria);
@@ -133,7 +141,7 @@ a {
 }
 
 
-/* ----TELAS DE ATÉ 1200PX---- */
+/* ----TELAS DE ATÉ 1200PX----TELAS DE ATÉ 1200PX----TELAS DE ATÉ 1200PX---- */
 @media (max-width: 1200px){
     .cabecalho{
         padding:5%;
@@ -142,19 +150,16 @@ a {
         justify-content: center;
         gap: 2rem;
         flex-wrap: wrap;
-        
     }
-
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
     }
-
     .apresentacao__conteudo{
         width: auto;
     }
     .apresentacao__imagem{
         align-self: center;
     }
-   
 }
+/* ----TELAS DE ATÉ 1200PX----TELAS DE ATÉ 1200PX----TELAS DE ATÉ 1200PX---- */
